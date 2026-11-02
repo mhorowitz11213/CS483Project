@@ -12,7 +12,9 @@ SECTION TWO: DATA SOURCES
 In order to capture the necessary features, the group turned to the following data sources (a description of which can be found in the next section)
     1. The Law Center for Better Housing Chicago Eviction Data: http://eviction.lcbh.org. To access the data simply click the download section.
     This data set is provided by the Law Center for Better Housing, a free legal aid society helping to stop foreclosures and evictions, and has been ranked as extremely reputable by Charity Navigator[^2]
-    2.
+    2. The Milwaukee Foreclosure GitHub repository: https://github.com/jdjohn215/milwaukee-foreclosures. To download just click on each file. 
+    This repository is maintained by John D Johnson, a research fellow at Marquette University Law School's Lubar Center, who specializes in housing research[^3]. Sources for where he acquired specific data including the images, tabular data, and JSON files are documented in his README.
+    3. Chicago Vacant Building Registry: 
 
 SECTION THREE: DATASET DESCRIPTION 
 
@@ -30,4 +32,5 @@ The tabular data for this project comes from the Law Center for Better Housing. 
 
 [^1] D'Amico, A (2026), "'Zombie' Foreclosures Are Most Common in These Midwestern Cities", Realtor.com, Available: https://www.msn.com/en-us/urban-infrastructure/housing-and-urban-development/zombie-foreclosures-are-most-common-in-these-midwestern-cities/ar-AA2bhFft?ocid=BingNewsVerp Accessed November 2 2026.
 [^2] Charity Navigator (nd.), "Law Center for Better Housing", Available:https://www.charitynavigator.org/ein/363134577 Accessed November 2 2026.
- 
+[^3] Marquette University (n.d.), "Lubar Center Team", Available: https://law.marquette.edu/lubar-center/lubar-center-team Accessed November 2 2026
+
