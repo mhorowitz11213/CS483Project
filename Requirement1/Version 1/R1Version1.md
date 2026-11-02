@@ -9,7 +9,12 @@ The goal of this project is to determine what causes foreclosures in midwest, wi
 
 SECTION TWO: DATA SOURCES
 
-SECTION TWO: DATASET DESCRIPTION 
+In order to capture the necessary features, the group turned to the following data sources (a description of which can be found in the next section)
+    1. The Law Center for Better Housing Chicago Eviction Data: http://eviction.lcbh.org. To access the data simply click the download section.
+    This data set is provided by the Law Center for Better Housing, a free legal aid society helping to stop foreclosures and evictions, and has been ranked as extremely reputable by Charity Navigator[^2]
+    2.
+
+SECTION THREE: DATASET DESCRIPTION 
 
 The group has decided on a variety of datasets, that the group feels will capture the conditions that lead to foreclosures in midwestern urban areas. Essential to this project is utilizing large, heterogeneous datasets, that can capture a multitude of features leading to a foreclosed home. Each data structure type has its strengths and weakenesses. For this project, the group has decided on the following data set types:
     1. Tabular
@@ -23,4 +28,6 @@ The tabular data for this project comes from the Law Center for Better Housing. 
     -Census data: 
 
 
-[^1] D'Amico, A (2026), ''Zombie' Foreclosures Are Most Common in These Midwestern Cities', Realtor.com, Available: https://www.msn.com/en-us/urban-infrastructure/housing-and-urban-development/zombie-foreclosures-are-most-common-in-these-midwestern-cities/ar-AA2bhFft?ocid=BingNewsVerp Accessed November 2 2026.
+[^1] D'Amico, A (2026), "'Zombie' Foreclosures Are Most Common in These Midwestern Cities", Realtor.com, Available: https://www.msn.com/en-us/urban-infrastructure/housing-and-urban-development/zombie-foreclosures-are-most-common-in-these-midwestern-cities/ar-AA2bhFft?ocid=BingNewsVerp Accessed November 2 2026.
+[^2] Charity Navigator (nd.), "Law Center for Better Housing", Available:https://www.charitynavigator.org/ein/363134577 Accessed November 2 2026.
+ 
