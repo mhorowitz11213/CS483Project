@@ -5,7 +5,7 @@ SECTION ONE: PROJECT GOAL
 
 Foreclosures remain a serious societal issues, causing homeloss and financial ruin. It has become a foremost objective for society to solve this issue, and to ensure that housing stability becomes ubiquitous across society. This is especially true of midwestern urban areas, which were hit particularly hard during the 2008 recession, and continue to lead in foreclosure numbers to this very actuality. [^1] Learning what causes foreclosures and in turn what can mitigate their numbers is the key objective of this research.
 
-The goal of this project is to determine what causes foreclosures in midwest, with the interest of determining a) the specific factors that result in a foreclosure, and b) perhaps the features that can minimize such an event, helping people to stay in their homes. This research will utilize a variety of differing datasets, or differing structures to determin 
+The goal of this project is to determine what causes foreclosures in midwest, with the interest of determining a. the specific factors that result in a foreclosure, and b. perhaps the features that can minimize such an event, helping people to stay in their homes. This research will utilize a variety of differing datasets, or differing structures to determin 
 
 SECTION TWO: DATA SOURCES
 
@@ -15,8 +15,11 @@ In order to capture the necessary features, the group turned to the following da
     2. The Milwaukee Foreclosure GitHub repository: https://github.com/jdjohn215/milwaukee-foreclosures. To download just click on each file. 
     This repository is maintained by John D Johnson, a research fellow at Marquette University Law School's Lubar Center, who specializes in housing research[^3]. Sources for where he acquired specific data including the images, tabular data, and JSON files are documented in his README.
     3. MIT Places Dataset: Accessed by going to the MIT CSAIL GitHub Repository at https://github.com/CSAILVision/places365 and downloading the dataset from GitHub.
-    This repository contains a multitude of images of places with names, we wills select images that correspond with slum or ruin as a foreclosure, and other labels for non foreclosure.
-    4. 
+    This repository contains a multitude of images of places with names, we wills select images that correspond with slum or ruin as a foreclosure, and other labels for non foreclosure. Being hosted by CSAIL, one of the most reputable labs in computer science, we feel that this source is extremely reputable and worth using in our research.
+    4. Chicago Health Atlas: https://chicagohealthatlas.org/indicators/EVC.
+    The Chicago Health Atlas website hosted by the City of Chicago, UIC Public Health, OSA Sprague Memorial Institute, Metopio, Schreiber Philanthropy, and Michael Reese has a variety of data on maps and tables that show evictions throughout the city, these will need to be scraped from the website. These is a well regarded cite supported by official city and civic institutions. 
+    5. Illinois Courts: https://www.illinoiscourts.gov/approved-forms/circuit-court-standardized-forms-suites/eviction/.
+    This dataset shows all court filings on evictions in the state of Illinois and will need to be scraped. The data comes from the official site for the Illinois Court System which handles all evictions.
 
 SECTION THREE: DATASET DESCRIPTION 
 
