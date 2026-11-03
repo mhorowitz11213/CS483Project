@@ -14,7 +14,9 @@ In order to capture the necessary features, the group turned to the following da
     This data set is provided by the Law Center for Better Housing, a free legal aid society helping to stop foreclosures and evictions, and has been ranked as extremely reputable by Charity Navigator[^2]
     2. The Milwaukee Foreclosure GitHub repository: https://github.com/jdjohn215/milwaukee-foreclosures. To download just click on each file. 
     This repository is maintained by John D Johnson, a research fellow at Marquette University Law School's Lubar Center, who specializes in housing research[^3]. Sources for where he acquired specific data including the images, tabular data, and JSON files are documented in his README.
-    3. Chicago Vacant Building Registry: 
+    3. MIT Places Dataset: Accessed by going to the MIT CSAIL GitHub Repository at https://github.com/CSAILVision/places365 and downloading the dataset from GitHub.
+    This repository contains a multitude of images of places with names, we wills select images that correspond with slum or ruin as a foreclosure, and other labels for non foreclosure.
+    4. 
 
 SECTION THREE: DATASET DESCRIPTION 
 
