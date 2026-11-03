@@ -39,3 +39,27 @@ The tabular data for this project comes from the Law Center for Better Housing. 
 [^2] Charity Navigator (nd.), "Law Center for Better Housing", Available:https://www.charitynavigator.org/ein/363134577 Accessed November 2 2026.
 [^3] Marquette University (n.d.), "Lubar Center Team", Available: https://law.marquette.edu/lubar-center/lubar-center-team Accessed November 2 2026
 
+SECTION 4: Veracity of Data
+Our data comes from reliable academic, government, and legal institutions. However, the housing and court sources rely on municipal clerk entries and legal templates built for administration rather than statistical analysis. 
+
+Missing Values, Duplicates, & Inconsistencies
+    LCBH, Milwaukee, Health Atlas: Contain duplicate filings, unstandardized addresses and landlord LLC names, and not much data in low-population areas
+
+    Places365: Contains near duplicate images, corrupted files, and very similar  labels such as apartment_building vs. residential_neighborhood for the same house
+
+    Illinois Court Forms: dates contain unstructured text and checkboxes
+
+Errors, Outdated Info, & Biases
+
+    Bias: Court records only capture formal filings and don't include informal evictions like lockouts or tenants leaving early. Data from 2020–2022 is also  skewed by COVID-19 and the Milwaukee dataset ends in 2022.
+
+    Measurement & Errors: Health Atlas rates rely on Census ACS estimates that have margins of error, Places365 has web-scraping geographic biases, and handwritten court forms can have errors.
+
+Cleaning & Preprocessing Plan
+
+    Normalize addresses and combine multi defendant cases by (Case_ID, Address, Date)
+
+    Filter out commercial properties and add time indicators to separate COVID-19  years from baseline trends
+
+    Clean Images & Forms: Drop corrupted/duplicate images using perceptual hashing and resize tensors to 224×224. Use PDF parsers with strict validation to normalize dates to YYYY-MM-DD
+
