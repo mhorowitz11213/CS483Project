@@ -1,6 +1,3 @@
-
-
-
 SECTION ONE: PROJECT GOAL
 
 Foreclosures remain a serious societal issues, causing homeloss and financial ruin. It has become a foremost objective for society to solve this issue, and to ensure that housing stability becomes ubiquitous across society. This is especially true of midwestern urban areas, which were hit particularly hard during the 2008 recession, and continue to lead in foreclosure numbers to this very actuality. [^1] Learning what causes foreclosures and in turn what can mitigate their numbers is the key objective of this research.
@@ -24,10 +21,10 @@ In order to capture the necessary features, the group turned to the following da
 SECTION THREE: DATASET DESCRIPTION 
 
 The group has decided on a variety of datasets, that the group feels will capture the conditions that lead to foreclosures in midwestern urban areas. Essential to this project is utilizing large, heterogeneous datasets, that can capture a multitude of features leading to a foreclosed home. Each data structure type has its strengths and weakenesses. For this project, the group has decided on the following data set types:
-    1. Tabular
-    2. Image
-    3. JSON
-    4. Webscrape
+    1. Tabular (Structured)
+    2. Image (Unstructured)
+    3. XML File (Semi-structured)
+    4. HTML (Semi-structured)
 
 Tabular:
 The tabular data for this project comes from the Law Center for Better Housing. This dataset consists of the following:
@@ -38,6 +35,34 @@ The tabular data for this project comes from the Law Center for Better Housing. 
 [^1] D'Amico, A (2026), "'Zombie' Foreclosures Are Most Common in These Midwestern Cities", Realtor.com, Available: https://www.msn.com/en-us/urban-infrastructure/housing-and-urban-development/zombie-foreclosures-are-most-common-in-these-midwestern-cities/ar-AA2bhFft?ocid=BingNewsVerp Accessed November 2 2026.
 [^2] Charity Navigator (nd.), "Law Center for Better Housing", Available:https://www.charitynavigator.org/ein/363134577 Accessed November 2 2026.
 [^3] Marquette University (n.d.), "Lubar Center Team", Available: https://law.marquette.edu/lubar-center/lubar-center-team Accessed November 2 2026
+
+Image:
+The images for this project come from the New York Times. The dataset consists of the following:
+    -43,634 Properties on the brink of foreclosure in 2014. Can be CSV or folder of likely JPEGs.
+    -Data:
+
+
+[^1] Kissane, E (2014), "The NYT's Detroit Foreclosure Interactive", OpenNews Source, Available: opennews.org Accessed November 4 2026.
+
+XML File:
+The XML file (SVG vector image) for this project comes from the Chicago Health Atlas. The dataset consists of the following:
+    -Eviction count (EVC), eviction rate (EVR), geographic markers, and time indicators.
+    -Data:
+
+
+[^1] Chicago Health Atlas (2026), "Evictions," City of Chicago Interactive Public Data Dashboard, Available: https://chicagohealthatlas.org/indicators/EVC?tab=chart Accessed November 4 2026.
+
+HTML:
+The HTML file for this project comes from the Eviction Research Network in collaboration with U.C. Berkeley's Urban Displacement Project. The dataset consists of the following:
+    -Eviction filing counts, demographic/racial filing rate disparities, and geographic markers.
+    -Data:
+
+
+[^1] Moore, H., Cohen, A., and Thomas, T. (2023), "Cook County Illinois Eviction Filings," Eviction Research Network & U.C. Berkeley Urban Displacement Project, Available: https://evictionresearch.net/illinois/ Accessed November 4 2026.
+
+Challenges: Texting matching typos such as "St." vs "Street" and missing apartment numbers can present challenges. Also, if boundaries have shifted for communities, that can cause problems as well.
+
+Cleaning, Transformation, Integration: We plan to clean through removing duplicates and identifying weird discrepancies in the data. We will transform anything necessary and integrate through merging the data properly.
 
 SECTION 4: Veracity of Data
 Our data comes from reliable academic, government, and legal institutions. However, the housing and court sources rely on municipal clerk entries and legal templates built for administration rather than statistical analysis. 
