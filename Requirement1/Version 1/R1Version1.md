@@ -88,3 +88,12 @@ Cleaning & Preprocessing Plan
 
     Clean Images & Forms: Drop corrupted/duplicate images using perceptual hashing and resize tensors to 224×224. Use PDF parsers with strict validation to normalize dates to YYYY-MM-DD
 
+SECTION FIVE: VALUE OF DATA
+
+Our data is valuable because it shows where evictions happen, which demographics they affect, and what might help prevent them. Evictions in general can also cause immense financial strain on households that can become homeless or jobless due to the loss of an address for themselves and their families.
+
+This data is also valuable because different legal groups throughout Chicago can also use these datasets to help them decide which neighborhoods to focus on first, such as where to offer free legal help, rental assistance, or tenant education. The LCBH data also breaks down data by ward, which allows for local members of the City Council of Chicago to visually see eviction rates in the areas they represent and push towards the local assembly for valid solutions that can help the people within areas that statistically need more support.
+
+The data provides strong insight into clusters of neighborhoods with high eviction rates, such as the South Shore, which had the most filings and the highest rate in 2019. The addition of the HUD voucher data also lets us test whether areas with many housing-voucher households have different eviction rates compared to areas with fewer housing-voucher households. We can also see trends over years of data to see if eviction filings changed the fastest throughout a period of time. 
+
+The data is also valuable in the aspects of different formats of data visualization. For example, the MIT Places365 dataset contains about 1.8 million labeled images across 365 types of scenes. Adding different styles of datasets such as court filings, census data, voucher counts, and images gives a broader representation, as it allows us to see all of the sources against each other in a clearer format. This also makes our data more accurate, as we are not biasing our data into one specific dataset that may trend towards one specific opinion. 
