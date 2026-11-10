@@ -100,7 +100,9 @@ SECTION FIVE: DATA PREPARATION
 Cleaning, Transformation, Integration: We plan to clean through removing duplicates and identifying weird discrepancies in the data. We will transform anything necessary and integrate through merging the data properly.
 
 SECTION SIX: LIMITATIONS AND RISKS
-Challenges: Texting matching typos such as "St." vs "Street" and missing apartment numbers can present challenges. Also, if boundaries have shifted for communities, that can cause problems as well.
+Challenges: Texting matching typos such as "St." vs "Street" and missing apartment numbers can present challenges. In multi-unit buildings the missing apartment numbers are more tricky. This is because many different family evictions get combined into a single point on or even dropped altogether. Another risk is that  boundaries don’t stay the same over time. When comparing data across a long periods of time there will be shifting Census reports and new neighborhood boundaries which will leave us to estimate where one area ends and another begins.
+
+Another major challenge is that court records don't tell the whole story. Court numbers include formal filings but they don't account for  informal things such as  landlords changing locks, shutting off power, or tenants leaving early to avoid having a court filing on their record. Even when a case reaches court a filing doesn't guarantee someone actually moves out. Still, that household will always have an eviction listed in background checks. There are also abandoned "zombie" foreclosures that slip through when the registry audits. There are month long delays in city reporting and raw data doens't account for that, which might make it seem like one month was really bad. On the other side, a sudden improvement in neighborhood stability could just be a hold up at courthouse.
 
 
 
