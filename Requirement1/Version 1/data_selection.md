@@ -87,7 +87,7 @@ For veracity, we are looking at quality, accuracy, consistency, and reliability 
 
 To improve reliability, we will need to make sure our data is clean. We will need to normalize data and identify duplicates. Cleaning, Standardizing, and validating the data to reduce errors and ensure data reliability is important.
 
-6. Value
+5. Value
     Our data is valuable because it shows where evictions happen, which demographics they affect, and what might help prevent them. Evictions in general can also cause immense financial strain on households that can become homeless or jobless due to the loss of an address for themselves and their families.
 
     This data is also valuable because different legal groups throughout Chicago can also use these datasets to help them decide which neighborhoods to focus on first, such as where to offer free legal help, rental assistance, or tenant education. The LCBH data also breaks down data by ward, which allows for local members of the City Council of Chicago to visually see eviction rates in the areas they represent and push towards the local assembly for valid solutions that can help the people within areas that statistically need more support.
