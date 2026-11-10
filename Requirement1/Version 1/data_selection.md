@@ -13,6 +13,7 @@ In order to capture the necessary features, the group turned to the following da
     This repository is maintained by John D Johnson, a research fellow at Marquette University Law School's Lubar Center, who specializes in housing research[^3]. Sources for where he acquired specific data including the images, tabular data, and JSON files are documented in his README.
     3. MIT Places Dataset: Accessed by going to the MIT CSAIL GitHub Repository at https://github.com/CSAILVision/places365 and downloading the dataset from GitHub.
     This repository contains a multitude of images of places with names, we wills select images that correspond with slum or ruin as a foreclosure, and other labels for non foreclosure. Being hosted by CSAIL, one of the most reputable labs in computer science, we feel that this source is extremely reputable and worth using in our research.
+    Direct download is available using the call: import torchvision.datasets as datasets and then writing dataset = datasets.Places365(root='./data', split='train-standard', small=True, download=True).
     4. Chicago Health Atlas: https://chicagohealthatlas.org/indicators/EVC.
     The Chicago Health Atlas website hosted by the City of Chicago, UIC Public Health, OSA Sprague Memorial Institute, Metopio, Schreiber Philanthropy, and Michael Reese has a variety of data on maps and tables that show evictions throughout the city, these will need to be scraped from the website. These is a well regarded cite supported by official city and civic institutions. 
     5. Illinois Courts: https://www.illinoiscourts.gov/approved-forms/circuit-court-standardized-forms-suites/eviction/.
@@ -27,9 +28,14 @@ The group has decided on a variety of datasets, that the group feels will captur
     4. HTML (Semi-structured)
 
 Tabular:
-The tabular data for this project comes from the Law Center for Better Housing. This dataset consists of the following:
-    -Eviction data: 4 CSVs, with each row per year for each corresponding geographic area.
-    -Census data: 
+The tabular data for this project comes from:
+    The Law Center for Better Housing. This dataset consists of the following:
+    -Eviction data: 4 CSVs, with each row per year for each corresponding year, tract, community area and ward, with the largest files containing over 8000 obs.
+    -Census data: 7 CSVs, with census data at each geographic unity--city, community area, ward, tract--for Chicago.
+    The Milwaukee Foreclosure GitHub repository. This repository contains five CSV files on Milwaukee foreclosures at each census level plus a geocoded foreclosure list with over 36,000 observations
+Image:
+    The image data comes from part of the MIT Places repository.
+
 
 
 [^1] D'Amico, A (2026), "'Zombie' Foreclosures Are Most Common in These Midwestern Cities", Realtor.com, Available: https://www.msn.com/en-us/urban-infrastructure/housing-and-urban-development/zombie-foreclosures-are-most-common-in-these-midwestern-cities/ar-AA2bhFft?ocid=BingNewsVerp Accessed November 2 2026.
