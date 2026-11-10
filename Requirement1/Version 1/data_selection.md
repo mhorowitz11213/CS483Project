@@ -58,13 +58,36 @@ Cleaning & Preprocessing Plan
     Normalize addresses and combine multi defendant cases by (Case_ID, Address, Date)
     Filter out commercial properties and add time indicators to separate COVID-19  years from baseline trends
     Clean Images & Forms: Drop corrupted/duplicate images using perceptual hashing and resize tensors to 224×224. Use PDF parsers with strict validation to normalize dates to YYYY-MM-DD
+    
 2. Velocity:
+Our research uses datasets from several sources. Velocity is the speed at which data is collected, updated, and made available. These sources are not updated at the same rate which can affect how quickly we identify and analyze changes in trends.
     The datasets used in this research are all fairly large:
     1. LCBH datasets contain multiple files over over 8,000 records and 36 columns.
-    2. 
+    2. For LCBH and Milwaukee Eviction dataset, they are not updated in real time and are added as eviction cases are filed and         processed. This means that there may be delays when an eviction occurs and when the information becomes available.
+    3. Health Atlas: This data is updated periodically. American Community Survey estimates are released annually which means that      recent changes may not be seen immediately. 
+    4. MIT: This MIT dataset has a static image dataset containing approximately millions of labeled images across categories. It       does not continuously receive new information, so its images may not represent recent neighborhood changes.
+    4. Illinois Courts: This website periodically updates its eviction forms. We will track approval dates and make sure we use         the appropriate versions when extracting information.
+
+Our data is updated at different frequencies. This means some information may be more recent than others. This can make it difficult to compare datasets for the same year or identify immediate changes. To address these limitations, we shall consider the publication dates and time periods of the datasets when analyzing them. We will align the datasets by year whenever possible. We will identify gaps between lastest data. Although our datasets are not updated in realtime, we have enough historical data.
+
 3. Variety
+For variety, there are different types, formats, and structures of data. Our project combines education, government, and legal sources to identify eviction patterns, neighborhood demographics, housing conditions, and more.
+    1. LCBH and Milwaukee: These datasets primarily contain structured tabular data. These records are generally organized in CSV         or spreadsheet formulas making them suitable for statistical analysis and data visualization.
+    2. Health Atlas: These are structured demographic and socioeconomic information like population estimates and household               characteristics. This allows us to compare eviction activity with characteristics of different communities.
+    3. MIT: There is unstructured visual data. It has visual information that can't be shown by numbers alone.
+    4. Illinois Courts: These sources contain semi-structured legal documents in PDF formatting.
+
+Our data variety allows us to combine structured, semi-structured, and unstructured information to develop a better understanding of eviction patterns. We can also explore data through textual characteristics and visual through the images.
+
 4. Veracity
-5. Value
+For veracity, we are looking at quality, accuracy, consistency, and reliability of our data. These sources provide valuable information, but we need to take advantage of it through our case for statistical analysis. We must identify information that is most important to us.
+    1. LCBH, Milwaukee, and Health Atlas: These datasets may contain duplicate eviction filings and variations in landlord names          due to different LLC or property management companies. Some geographic areas may also have limited information like                neighborhoods with small populations.
+    2. MIT: This dataset may contain duplicate images, corrupted files, and inconsistent scene labels. Image classification may be        less consistent depending on how images are labelled and what is being analyzed.
+    3. Illinois Courts: Extracting information from PDF files may introduce errors that we need to consider.
+
+To improve reliability, we will need to make sure our data is clean. We will need to normalize data and identify duplicates. Cleaning, Standardizing, and validating the data to reduce errors and ensure data reliability is important.
+
+6. Value
     Our data is valuable because it shows where evictions happen, which demographics they affect, and what might help prevent them. Evictions in general can also cause immense financial strain on households that can become homeless or jobless due to the loss of an address for themselves and their families.
 
     This data is also valuable because different legal groups throughout Chicago can also use these datasets to help them decide which neighborhoods to focus on first, such as where to offer free legal help, rental assistance, or tenant education. The LCBH data also breaks down data by ward, which allows for local members of the City Council of Chicago to visually see eviction rates in the areas they represent and push towards the local assembly for valid solutions that can help the people within areas that statistically need more support.
