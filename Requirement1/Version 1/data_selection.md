@@ -35,64 +35,49 @@ The tabular data for this project comes from:
     The Milwaukee Foreclosure GitHub repository. This repository contains five CSV files on Milwaukee foreclosures at each census level plus a geocoded foreclosure list with over 36,000 observations
 Image:
     The image data comes from part of the MIT Places repository.
+XML File:
+    The XML files consists of SVG bector image, and consists of:
+    ~Eviction count (EVC), eviction rate (EVR), geographic, and time indicators. In addition, further information can be scraped and parsed into JSON files comes from the Chicago Health Atlas with code from Ryan Zomorrodi https://github.com/ryanzomorrodi/healthatlas a research assistant at UIC--one of the groups running the Chicago Health Atlas. Size of data is variable and will be scraped this week.
+HTML:
+    The HTML data is data of court filings found at the Illinois Court Website. The data contains all evictions, which the group will process as foreclosures. The size is variable.
+
+    
+SECTION FOUR: ANALYSIS OF THE FIVE V's
+
+1. Veracity:
+Our data comes from reliable academic, government, and legal institutions. However, the housing and court sources rely on municipal clerk entries and legal templates built for administration rather than statistical analysis. 
+Missing Values, Duplicates, & Inconsistencies
+    LCBH, Milwaukee, Health Atlas: Contain duplicate filings, unstandardized addresses and landlord LLC names, and not much data in low-population areas
+    Places365: Contains near duplicate images, corrupted files, and very similar  labels such as apartment_building vs. residential_neighborhood for the same house
+    Illinois Court Forms: dates contain unstructured text and checkboxes
+
+Errors, Outdated Info, & Biases
+    Bias: Court records only capture formal filings and don't include informal evictions like lockouts or tenants leaving early. Data from 2020–2022 is also  skewed by COVID-19 and the Milwaukee dataset ends in 2022.
+    Measurement & Errors: Health Atlas rates rely on Census ACS estimates that have margins of error, Places365 has web-scraping geographic biases, and handwritten court forms can have errors.
+Cleaning & Preprocessing Plan
+    Normalize addresses and combine multi defendant cases by (Case_ID, Address, Date)
+    Filter out commercial properties and add time indicators to separate COVID-19  years from baseline trends
+    Clean Images & Forms: Drop corrupted/duplicate images using perceptual hashing and resize tensors to 224×224. Use PDF parsers with strict validation to normalize dates to YYYY-MM-DD
+2. Velocity:
+    The datasets used in this research are all fairly large:
+    1. 
+
+
 
 
 
 [^1] D'Amico, A (2026), "'Zombie' Foreclosures Are Most Common in These Midwestern Cities", Realtor.com, Available: https://www.msn.com/en-us/urban-infrastructure/housing-and-urban-development/zombie-foreclosures-are-most-common-in-these-midwestern-cities/ar-AA2bhFft?ocid=BingNewsVerp Accessed November 2 2026.
 [^2] Charity Navigator (nd.), "Law Center for Better Housing", Available:https://www.charitynavigator.org/ein/363134577 Accessed November 2 2026.
 [^3] Marquette University (n.d.), "Lubar Center Team", Available: https://law.marquette.edu/lubar-center/lubar-center-team Accessed November 2 2026
-
-Image:
-The images for this project come from the New York Times. The dataset consists of the following:
-    -43,634 Properties on the brink of foreclosure in 2014. Can be CSV or folder of likely JPEGs.
-    -Data:
-
-
-[^1] Kissane, E (2014), "The NYT's Detroit Foreclosure Interactive", OpenNews Source, Available: opennews.org Accessed November 4 2026.
-
-XML File:
-The XML file (SVG vector image) for this project comes from the Chicago Health Atlas. The dataset consists of the following:
-    -Eviction count (EVC), eviction rate (EVR), geographic markers, and time indicators.
-    -Data:
-
-
-[^1] Chicago Health Atlas (2026), "Evictions," City of Chicago Interactive Public Data Dashboard, Available: https://chicagohealthatlas.org/indicators/EVC?tab=chart Accessed November 4 2026.
-
-HTML:
-The HTML file for this project comes from the Eviction Research Network in collaboration with U.C. Berkeley's Urban Displacement Project. The dataset consists of the following:
-    -Eviction filing counts, demographic/racial filing rate disparities, and geographic markers.
-    -Data:
-
-
-[^1] Moore, H., Cohen, A., and Thomas, T. (2023), "Cook County Illinois Eviction Filings," Eviction Research Network & U.C. Berkeley Urban Displacement Project, Available: https://evictionresearch.net/illinois/ Accessed November 4 2026.
+[^4] Kissane, E (2014), "The NYT's Detroit Foreclosure Interactive", OpenNews Source, Available: opennews.org Accessed November 4 2026.
+[^5] Chicago Health Atlas (2026), "Evictions," City of Chicago Interactive Public Data Dashboard, Available: https://chicagohealthatlas.org/indicators/EVC?tab=chart Accessed November 4 2026.
+[^6] Moore, H., Cohen, A., and Thomas, T. (2023), "Cook County Illinois Eviction Filings," Eviction Research Network & U.C. Berkeley Urban Displacement Project, Available: https://evictionresearch.net/illinois/ Accessed November 4 2026.
 
 Challenges: Texting matching typos such as "St." vs "Street" and missing apartment numbers can present challenges. Also, if boundaries have shifted for communities, that can cause problems as well.
 
 Cleaning, Transformation, Integration: We plan to clean through removing duplicates and identifying weird discrepancies in the data. We will transform anything necessary and integrate through merging the data properly.
 
-SECTION 4: Veracity of Data
-Our data comes from reliable academic, government, and legal institutions. However, the housing and court sources rely on municipal clerk entries and legal templates built for administration rather than statistical analysis. 
 
-Missing Values, Duplicates, & Inconsistencies
-    LCBH, Milwaukee, Health Atlas: Contain duplicate filings, unstandardized addresses and landlord LLC names, and not much data in low-population areas
-
-    Places365: Contains near duplicate images, corrupted files, and very similar  labels such as apartment_building vs. residential_neighborhood for the same house
-
-    Illinois Court Forms: dates contain unstructured text and checkboxes
-
-Errors, Outdated Info, & Biases
-
-    Bias: Court records only capture formal filings and don't include informal evictions like lockouts or tenants leaving early. Data from 2020–2022 is also  skewed by COVID-19 and the Milwaukee dataset ends in 2022.
-
-    Measurement & Errors: Health Atlas rates rely on Census ACS estimates that have margins of error, Places365 has web-scraping geographic biases, and handwritten court forms can have errors.
-
-Cleaning & Preprocessing Plan
-
-    Normalize addresses and combine multi defendant cases by (Case_ID, Address, Date)
-
-    Filter out commercial properties and add time indicators to separate COVID-19  years from baseline trends
-
-    Clean Images & Forms: Drop corrupted/duplicate images using perceptual hashing and resize tensors to 224×224. Use PDF parsers with strict validation to normalize dates to YYYY-MM-DD
 
 SECTION FIVE: VALUE OF DATA
 
