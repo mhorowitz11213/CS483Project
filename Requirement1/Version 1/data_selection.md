@@ -9,7 +9,7 @@ SECTION TWO: DATA SOURCES
 In order to capture the necessary features, the group turned to the following data sources (a description of which can be found in the next section)
     1. The Law Center for Better Housing Chicago Eviction Data: http://eviction.lcbh.org. To access the data simply click the download section.
     This data set is provided by the Law Center for Better Housing, a free legal aid society helping to stop foreclosures and evictions, and has been ranked as extremely reputable by Charity Navigator[^2]
-    2. The Milwaukee Foreclosure GitHub repository: https://github.com/jdjohn215/milwaukee-foreclosures. To download just click on each file. 
+    2. The Milwaukee Foreclosure GitHub repository: https://github.com/jdjohn215/milwaukee-foreclosures. To download just click on each file. In addition, attempts will be made to merge in the following dataset: https://data.milwaukee.gov/dataset/property-sales-data/resource/9047305c-fb7d-43b4-8f5b-9475a5a74ac5?inner_span=True 
     This repository is maintained by John D Johnson, a research fellow at Marquette University Law School's Lubar Center, who specializes in housing research[^3]. Sources for where he acquired specific data including the images, tabular data, and JSON files are documented in his README.
     3. MIT Places Dataset: Accessed by going to the MIT CSAIL GitHub Repository at https://github.com/CSAILVision/places365 and downloading the dataset from GitHub.
     This repository contains a multitude of images of places with names, we wills select images that correspond with slum or ruin as a foreclosure, and other labels for non foreclosure. Being hosted by CSAIL, one of the most reputable labs in computer science, we feel that this source is extremely reputable and worth using in our research.
@@ -32,7 +32,8 @@ The tabular data for this project comes from:
     The Law Center for Better Housing. This dataset consists of the following:
     -Eviction data: 4 CSVs, with each row per year for each corresponding year, tract, community area and ward, with the largest files containing over 8000 obs.
     -Census data: 7 CSVs, with census data at each geographic unity--city, community area, ward, tract--for Chicago.
-    The Milwaukee Foreclosure GitHub repository. This repository contains five CSV files on Milwaukee foreclosures at each census level plus a geocoded foreclosure list with over 36,000 observations
+    The Milwaukee Foreclosure GitHub repository. This repository contains five CSV files on Milwaukee foreclosures at each census level plus a geocoded foreclosure list with over 36,000 observations.
+    City of Milwaukee provided dataset that will be potentially merged into the Milwaukee dataset. The two datasets used are for years 2010 and 2020 covering the two periods that best match the data from the Milwaukee foreclosure dataset. This dataset is comprised of 21 columns of different features of a home, plus geographic info and tax id (which will allow for a join on the GitHub provided data), with 1922 records for 2010 and 6355 records for 2020.
 Image:
     The image data comes from part of the MIT Places repository.
 XML File:
